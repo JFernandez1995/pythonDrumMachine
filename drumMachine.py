@@ -1,8 +1,19 @@
-from playsound import playsound
+import simpleaudio as sa
 import tkinter as tk
 
 def sound1():
-    playsound('/insert/path/to/.mp3file')
+	filename = '/put/path/to/only_a_WAV_file'
+	wave_obj = sa.WaveObject.from_wave_file(filename)
+	play_obj = wave_obj.play()
+
+
+
+def sound2():
+	filename = '/put/path/to/only_a_WAV_file'
+	wave_obj = sa.WaveObject.from_wave_file(filename)
+	play_obj = wave_obj.play()
+
+
 
 #define multiple sounds to assign to each pad
 
@@ -25,12 +36,14 @@ button1 = tk.Button(frame,
                    height = 5, width = 10)
 button1.pack(side=tk.LEFT)
 
+
 button2 = tk.Button(frame,
                    text="Pad 2",
                     fg="blue",
-                   command=sound1,
+                   command=sound2,
                    height = 5, width = 10)
 button2.pack(side=tk.LEFT)
+
 
 button3 = tk.Button(frame,
                    text="Pad 3",
