@@ -1,6 +1,6 @@
 # pythonDrumMachine
 
-This is a virtual drum machine using the 'playsound' and 'tkinter' libraries
+This is a virtual drum machine using the 'simpleaudio' and 'tkinter' libraries
 
 Requirments:
 1. please first install the 'simpleaudio' library using pip
